@@ -1,28 +1,31 @@
 {
   "kind": "collectionType",
-  "collectionName": "favoritos",
+  "collectionName": "pedidos",
   "info": {
-    "singularName": "favorito",
-    "pluralName": "favoritos",
-    "displayName": "Favorito",
+    "singularName": "pedido",
+    "pluralName": "pedidos",
+    "displayName": "Pedido",
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "data": {
+      "type": "datetime"
+    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "favoritos"
+      "inversedBy": "pedidos"
     },
-    "produto": {
+    "produtos": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::produto.produto",
-      "inversedBy": "favoritos"
+      "inversedBy": "pedidos"
     }
   }
 }

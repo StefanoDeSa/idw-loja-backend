@@ -49,6 +49,12 @@
         "images"
       ]
     },
+    "pedidos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pedido.pedido",
+      "mappedBy": "produtos"
+    },
     "favoritos": {
       "type": "relation",
       "relation": "oneToMany",
