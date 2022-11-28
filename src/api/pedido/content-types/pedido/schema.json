@@ -21,6 +21,9 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "pedidos"
     },
+    "totalDoPedido": {
+      "type": "decimal"
+    },
     "produtos": {
       "type": "relation",
       "relation": "manyToMany",

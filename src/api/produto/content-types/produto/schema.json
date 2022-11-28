@@ -49,17 +49,17 @@
         "images"
       ]
     },
-    "pedidos": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::pedido.pedido",
-      "mappedBy": "produtos"
-    },
     "favoritos": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::favorito.favorito",
       "mappedBy": "produto"
+    },
+    "pedidos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pedido.pedido",
+      "inversedBy": "produtos"
     }
   }
 }
