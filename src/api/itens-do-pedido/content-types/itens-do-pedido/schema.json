@@ -4,7 +4,8 @@
   "info": {
     "singularName": "itens-do-pedido",
     "pluralName": "itens-do-pedidos",
-    "displayName": "ItensDoPedido"
+    "displayName": "ItensDoPedido",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,9 +15,9 @@
     "quantidade": {
       "type": "integer"
     },
-    "produtos": {
+    "produto": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::produto.produto"
     }
   }
