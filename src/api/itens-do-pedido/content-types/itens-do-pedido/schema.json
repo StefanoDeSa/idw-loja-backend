@@ -16,7 +16,7 @@
     },
     "produtos": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::produto.produto"
     }
   }
