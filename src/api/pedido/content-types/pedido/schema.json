@@ -24,11 +24,10 @@
     "totalDoPedido": {
       "type": "decimal"
     },
-    "produtos": {
+    "itens_do_pedidos": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::produto.produto",
-      "inversedBy": "pedidos"
+      "relation": "oneToMany",
+      "target": "api::itens-do-pedido.itens-do-pedido"
     }
   }
 }
