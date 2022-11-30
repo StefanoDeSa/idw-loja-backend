@@ -23,11 +23,6 @@
     },
     "totalDoPedido": {
       "type": "decimal"
-    },
-    "itens_do_pedidos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::itens-do-pedido.itens-do-pedido"
     }
   }
 }
